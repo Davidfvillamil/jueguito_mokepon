@@ -1,0 +1,175 @@
+/*
+1.  Existen diferentes tipos de selectores "." es para un selector tipo clase, "#" es para un selector tipo id 
+2. Visualizaciones. Hay muchas pero las principales son "block", "inline" y "inline - block"
+
+https://mastery.games/flexboxzombies/chapter/4/level/2 esta pagina es una verga para entender todo lo que es flexbox 
+
+3. https://platzi.com/clases/3208-programacion-basica/52016-modelo-de-caja/ en esta clase se explica el modelo de caja: que es padding, box-sizing
+
+4. para mirar paletas de colores https://colorhunt.co/palette/863a6f975c8dd989b5ffadbc
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg,rgb(245, 83, 83) 0%, rgb(254, 177, 57) 33%, rgb(246, 245, 77) 100%);
+}
+
+#selecion_mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    color: white;
+    font-size: 100px;
+    font-family: 'Fredoka one', cursive;
+    margin: 0px;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 32px;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 30px;
+    margin: 10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 180px;
+    height: 160px;
+    background-color: rgb(20, 63, 107);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#langostelvis{
+    width: 60px;
+}
+#tarjea-tucapalma{
+    width: 55px;
+}
+
+#tarjea-pydos{
+    width: 77px;
+}
+
+.tarjeta-de-mokepon img{
+    width: 100px;
+}
+
+#boton_mascota{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(246 245 77);
+    border: 1px solid rgb(20 63 107);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: brown;
+}
+
+#seleccionar_ataque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones-de-ataque{
+    width: 80px;
+    background: mediumvioletred;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+
+}
+
+#mensajes{
+    width: 280px;
+    background-color: blueviolet;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+#boton-reiniciar{
+    border-radius: 20px;
+    border: none;
+    color: mediumvioletred;;
+}
+
+.ataques{
+    display:grid;
+    grid-template-columns: 100px 100px;
+}
+
+.resutados-ataques-jugador, .resultados-ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+
+#vidas_jugador, #vida_oponente{
+    font-size: 30px;
+}
+
+#ver-mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#mapa{
+    border: 3px solid white;
+}
+
+
+
+
+
+
+@media (max-width: 420px){
+    .tarjetas{
+        flex-direction:column
+    }
+    .titulo{
+        font-size: 70px;
+    }
+    .subtitulo{
+        font-size: 20px;
+    }
+    .botones-de-ataque{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mokepon</title>
+
+  
+    <link rel="stylesheet" href="js/estilos.css">
+
+</head>
+<body>
+    
+
+    <section id="selecion_mascota">
+        <h1 id="" class="titulo">Mokepon</h1>
+
+        <h2 class="subtitulo">Elige a tu mascota</h2>
+
+        <div class="tarjetas" id="contenedor-tarjetas"></div>
+
+        
+        <button id="boton_mascota">Seleccionar</button>
+
+    </section>
+
+    <section id="ver-mapa">
+        <h2 class="subtitulo">Recorre el mapa con tu mokepon</h2>
+        <canvas id="mapa"></canvas>
+
+        
+
+    </section>
+
+    <section id="seleccionar_ataque"> 
+
+        <h1 id="" class="titulo">Mokepon</h1>
+
+        <h2 class="subtitulo">Seleccionar ataque: </h2>
+
+        <div id="contenedor-boton-ataques" class="tarjeta-boton-ataques">
+            
+        </div>
+
+        
+        <div id="mensajes">
+            <p id="resultado">Exitos mi rey / reina</p>
+
+            <section id="reiniciar">
+                <button id="boton-reiniciar">reiniciar</button>
+            </section>                
+        </div>
+            
+            
+        <div class="ataques">
+            <div class="resutados-ataques-jugador">
+                <p id="vidas_jugador">0</p>
+                <p id="mascota_jugador"></p>
+                <div id="mensaje-ataque-jugador"></div>
+                
+            </div>
+
+            <div class="resultados-ataques-enemigo">
+                <p id="vida_oponente">0</p>
+                <p id="mascota_enemigo"></p>
+                <div id="mensaje-ataque-enemigo"></div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="js/mokepon.js"></script>
+</body>
+</html>
