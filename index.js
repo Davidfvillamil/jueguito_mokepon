@@ -75,7 +75,7 @@ app.post("/mokepon/:jugadorId/posicion" ,(req,res) =>{
     const y = req.body.y || 0
     //console.log(jugadores)
     //console.log('jugador Id', jugadorId)
-    const jugador = jugadores.find((jugador) => jugadorId === jugador.id)
+    const jugador = jugadores.find((jugador) => jugadorId == jugador.id)
 
     if (jugador){
         jugador.actualizarPosicion(x, y)

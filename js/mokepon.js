@@ -523,12 +523,10 @@ function enviarPosicion(x,y){
             res.json()
                 .then(function ({enemigos}) {
                     //console.log(enemigos)
-                    debugger
                     enemigos.forEach( function (enemigo){
-                        //console.log(enemigo)
-                        debugger
-                        if (enemigo.mokepon){
-                            mokepon_nombre = enemigo.mokepon.nombre || ""
+                        //console.log(enemigo)q
+                        if (enemigo.Mokepon){
+                            mokepon_nombre = enemigo.Mokepon.nombre || ""
                             if (mokepon_nombre === "Hipodoge"){
                             su_mokepon = new Mokepon('Hipodoge', './assets/mokepons_mokepon_hipodoge_attack.png', 5, './assets/hipodoge_cabeza.png')  
                             }else if (mokepon_nombre === "Capipepo"){
